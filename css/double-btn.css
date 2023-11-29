@@ -1,0 +1,29 @@
+.double-btn {
+	display: flex;
+}
+
+.double-btn-item {
+	font-size: 13px;
+	padding: 13px 20px;
+	border: 1px solid red;
+}
+
+.double-btn-item > svg {
+	margin-left: 6px;
+}
+
+.double-btn-background {
+	color: var(--color);
+	background: var(--back);
+	border-color: var(--border);
+	font-weight: 700;
+	border-radius: 2px 0 0 2px;
+}
+
+.double-btn-outline {
+	color: var(--color);
+	background: var(--back);
+	border-color: var(--border);
+	font-weight: 500;
+	border-radius: 0 2px 2px 0;
+}

@@ -1,0 +1,33 @@
+.companies-section {
+	border-top: 1px solid #D8E3FE;
+	border-bottom: 1px solid #D8E3FE;
+}
+
+.companies {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	padding: clamp(20px, 4.5vw, 58px) 0;
+
+	width: 100%;
+	overflow: scroll;
+}
+
+.companies::-webkit-scrollbar {
+	display: none;
+}
+
+.company {
+	flex-shrink: 0;
+}
+
+.company:hover path {
+	fill: #5982E7;
+}
+
+@media screen and (max-width: 768px) {
+	.company {
+		flex-basis: 90px;
+	}
+}

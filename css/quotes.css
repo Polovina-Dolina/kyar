@@ -1,0 +1,131 @@
+.quotes-section {
+    background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+    padding: 110px 0 110px 19vw;
+    border-top: 1px solid #D8E3FE;
+    border-bottom: 1px solid #D8E3FE;
+    display: flex;
+    align-items: center;
+}
+
+.quotes-section-item:first-of-type {
+    max-width: 23.6vw;
+    flex-shrink: 0;
+}
+.quotes-section-item:last-of-type {
+    margin-left: 100px;
+    flex: 1 0 100%;
+    overflow: hidden;
+}
+
+.quotes-section-text {
+    color: #A4ABC8;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 189.292%; /* 22.715px */
+    letter-spacing: 0.36px;
+
+    max-width: 323px;
+    height: 78px;
+    margin-top: 14px;
+}
+
+.quotes-slider {
+    overflow: visible !important;
+    margin: 0 !important;
+    width: 423px;
+}
+
+.quotes-slider-wrapper {
+    padding: 35px 30px;
+}
+
+.quotes-slide {
+    border: 1px solid #D8E3FE;
+    background: #FFF;
+    box-shadow: 0px 5px 50px 0px #F3F5FA;
+    padding: 40px clamp(30px, 5.8vw, 69px);
+    max-width: 423px;
+    position: relative;
+
+    color: #676F95;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171.094%; /* 23.953px */
+    letter-spacing: 0.42px;
+}
+
+.quotes-slide:not(.swiper-slide-active) {
+    opacity: .45;
+}
+
+.quotes-slide:not(.swiper-slide-active) .quotes-slide-avatar {
+    display: none;
+}
+
+.quotes-slide-avatar {
+    width: 62px;
+    height: 62px;
+    border-radius: 100%;
+    overflow: hidden;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 50%;
+}
+
+.quotes-slide-avatar img {
+    width: 100%;
+}
+
+.quotes-swiper-pagination {
+    position: static !important;
+    max-width: 423px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 992px) {
+    .quotes-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: clamp(50px, 9vw, 90px) 0;
+    }
+    .quotes-section-item {
+        padding: 0 clamp(20px, 5vw, 70px);
+    }
+    .quotes-section-item:first-of-type {
+        max-width: 90%;
+    }
+    .quotes-section-item:last-of-type {
+        margin-left: 0;
+        width: 100%;
+    }
+    .quotes-swiper-pagination {
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quotes-section {
+        align-items: center;
+    }
+    .quotes-section-text {
+        text-align: center;
+        height: unset;
+    }
+
+    .quotes-slider {
+        max-width: 100%;
+    }
+
+    .quotes-slider-wrapper {
+        padding: 35px 0;
+    }
+    
+    .quotes-slide {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,164 @@
+.header-wrapper {
+	height: 80px;
+	border-bottom: 1px solid #D8E3FE; 
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	padding: 19px 0 18px;
+}
+
+.header-logo {
+	width: 26px;
+	height: 26px;
+	background: #5E81FE;
+	border-radius: 100%;
+}
+
+.nav-menu {
+	display: flex;
+	align-items: center;
+	gap: 42px;
+	margin-left: 73px;
+}
+
+.nav-link {
+	color: #697CA6;
+	text-shadow: 0px 0px 5px #E6E6E6;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.6px;
+	text-transform: capitalize;
+	transition: color 100ms;
+}
+
+.nav-link:hover,
+.nav-link.active {
+	color: #5E81FE;
+}
+
+.header-social {
+	display: flex;
+	gap: 35px;
+	margin-left: auto;
+}
+
+
+.header-social svg:hover path {
+	fill: #6188FF;
+}
+
+.header-btn {
+	margin-left: 44px;
+}
+
+.burger {
+	display: none;
+	height: 20px;
+	width: 20px;
+	align-items: center;
+	position: relative;
+	margin-left: clamp(20px, 4vw, 40px);
+	z-index: 11;
+}
+
+.burger span,
+.burger span::after,
+.burger span::before {
+	background-color: #5E81FE;
+	width: 100%;
+	height: 2px;
+	border-radius: 1px;
+	transition: all 300ms;
+}
+
+.burger span::after,
+.burger span::before {
+	content: '';
+	position: absolute;
+	left: 0;
+}
+
+.burger span::after {
+	top: 0;
+}
+.burger span::before {
+	bottom: 0;
+}
+
+.burger.burger-cross span {
+	background: transparent;
+}
+.burger.burger-cross span::after {
+	rotate: 45deg;
+	translate: 0 -50%;
+	top: 50%;
+}
+.burger.burger-cross span::before {
+	rotate: -45deg;
+	translate: 0 50%;
+	bottom: 50%;
+}
+
+@media screen and (max-width: 992px) {
+	.nav-menu {
+		gap: 20px;
+		margin-left: 40px;
+	}
+
+	.header-social {
+		gap: 25px;
+	}
+
+	.header-btn {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header-wrapper {
+		height: unset;
+	}
+	.header {
+		padding: 15px 0;
+	}
+
+	.header-social {
+		display: none;
+	}
+
+	.header-btn {
+		margin-left: auto;
+	}
+
+	.header-nav {
+		position: fixed;
+		height: 100vh; width: 100vw; 
+		top: 0; left: 100%;
+		z-index: 10;
+		background-color: rgba(28, 32, 49, 0.8);
+		padding-top: 20vh;
+		transition: translate 300ms;
+	}
+	.header-nav-open {
+		translate: -100% 0;
+	}
+
+	.nav-menu {
+		flex-direction: column;
+		align-items: center;
+		gap: 42px;
+		margin-left: unset;
+	}
+	
+	.nav-link {
+		color: #FFF;
+		text-shadow: unset;
+		font-size: clamp(18px, 3vw, 24px);
+	}
+
+	.burger {
+		display: flex;	
+	}
+}

@@ -1,0 +1,65 @@
+.sign-up {
+    padding: clamp(50px, 9vw, 118px) clamp(20px, 3vw, 30px);
+
+
+    display: flex;
+    align-items: center;
+    gap: clamp(20px, 3.5vw, 80px);
+}
+
+.sign-up-item {
+    flex: 0 1 50%;
+}
+
+.sign-up-title {
+    color: #3D4F9F;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sign-up-text {
+    color: #8D96BD;
+    font-family: Roboto;    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 191.016%; /* 26.742px */
+    letter-spacing: 0.42px;
+    margin-top: 18px;
+    max-width: 330px;
+}
+
+.sign-up-form {
+    display: flex;
+    gap: 14px;
+}
+
+.sign-up-form input:first-child {
+    flex: 0 0 279px;
+}
+
+.sign-up-form input:last-child {
+    flex: 0 0 184px;
+}
+
+@media screen and (max-width: 1200px) {
+    .sign-up {
+        flex-direction: column;
+    }
+    .sign-up-item {
+        width: 100%;
+    }
+    .sign-up-form {
+        flex-wrap: wrap;
+    }
+    .sign-up-form input:first-child,
+    .sign-up-form input:last-child {
+        flex-grow: 1;
+    }    
+}
+
+@media screen and (max-width: 580px) {
+    .sign-up-form input:first-child,
+    .sign-up-form input:last-child {
+        flex: 1 0 100%;
+    }    
+}

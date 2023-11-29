@@ -1,0 +1,132 @@
+.resources-section {
+    padding: clamp(50px, 9vw, 104px) clamp(0px, 9vw, 141px);
+    background-color: #F5F8FF;
+}
+
+.resources-slider-container {
+    position: relative;
+    margin-top: clamp(32px, 8vw, 92px);
+}
+
+.resources-slider {
+    padding: 30px !important;
+    max-width: 1018px;
+}
+
+.resources-slide {
+    display: flex !important;
+    max-width: 958px !important;
+    gap: 67px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 64px 35px;
+
+    border: 1px solid #D8E3FE;
+    background: #FFF;
+    box-shadow: 0px 15px 50px 0px #EFF4FF;
+}
+
+.resources-slide > * {
+    flex: 1 1 408px;
+}
+
+.resources-slide-gallery {
+    display: flex;
+}
+
+.resources-slide-gallery img {
+    width: 100%;
+    display: block;
+}
+
+.resources-slide-main-image {
+    flex: 0 0 clamp(130px, 23vw, 267px);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.resources-slide-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 12px;
+}
+
+.resources-slide-image {
+    width: clamp(60px, 10.9vw, 127px);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.resources-slide-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.resources-slide-title {
+    color: #3D4F9F;
+    font-size: clamp(24px, 2.5vw, 32px);
+    font-weight: 400;
+}
+
+.resources-slide-text {
+    color: #8D96BD;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 191.016%; /* 26.742px */
+    letter-spacing: 0.42px;
+    margin: clamp(16px, 3vw, 32px) 0;
+}
+
+.resources-slide-btns {
+    display: flex;
+    margin-top: auto;
+    gap: 8px;
+}
+
+.resources-swiper-pagination {
+    position: static !important;
+    margin-top: clamp(32px, 8vw, 101px);
+}
+
+.resources-btn-prev {
+    position: absolute;
+    top: 50%;
+    left: clamp(-73px, -4vw, -10px);
+    translate: 0 -50%;
+    cursor: pointer;
+}
+
+.resources-btn-next {
+    position: absolute;
+    top: 50%;
+    right: clamp(-73px, -4vw, -10px);
+    translate: 0 -50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .resources-btn-prev,
+    .resources-btn-next {
+        display: none;
+    }
+
+    .resources-section {
+        padding: clamp(50px, 9vw, 104px) clamp(0px, 1vw, 141px);
+        background-color: #F5F8FF;
+    }
+
+    .resources-slide {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .resources-slider {
+        padding: 0 !important;
+    }  
+    .resources-slide-btns {
+        flex-direction: column;
+    }  
+}

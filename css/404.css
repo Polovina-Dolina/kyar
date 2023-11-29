@@ -1,0 +1,8 @@
+.section-404 {
+    padding: clamp(50px, 9vw, 104px) 0;
+}
+.section-404 img {
+    margin: 0 auto;
+    display: block;
+    width: 60%;
+}

@@ -1,0 +1,53 @@
+.start-section {
+    padding: clamp(50px, 9vw, 91px) 0;
+    background: url("../img/get-start-background.png") center top / cover no-repeat;
+}
+
+.start-section .section-pretitle,
+.start-section .section-title {
+    color: #FFF;
+}
+
+.start-section .section-title {
+    margin-top: .33em;
+    font-weight: 300;
+}
+
+.start-section .section-title span {
+    font-weight: 500;
+}
+
+.start-section-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: clamp(13px, 1.8vw, 15px);
+    font-weight: 400;
+    line-height: 191.016%; /* 28.652px */
+    letter-spacing: 0.45px;
+    margin: 28px auto 0;
+    max-width: 712px;
+    min-height: 78px;
+}
+
+.start-section-btns {
+    margin-top: 28px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+    .start-section {
+        background: url("../img/get-start-background.png") right top / cover no-repeat;
+    }
+
+    .start-section-btns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .start-section-btns .double-btn-background,
+    .start-section-btns .double-btn-outline  {
+        border-radius: 0;
+    }
+    
+}

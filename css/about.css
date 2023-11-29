@@ -1,0 +1,133 @@
+.about-section {
+    padding: clamp(50px, 12vw, 171px) 0;
+    background: url('../img/clouds.png') center clamp(30px, 9vw, 141px) / clamp(300px, 83.3%, 1201px) auto no-repeat;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    height: 254px;
+
+    margin-top: clamp(32px, 8vw, 92px);
+    padding: 0 clamp(0px, 4vw, 64px);
+    
+}
+
+.about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 0 1 clamp(120px, 15.6vw, 140px);
+}
+
+.about-item-line {
+    background-color: #DAE4FE;
+    width: 28px;
+    height: 1px;
+    align-self: center;
+}
+
+.about-item-icon {
+    width: 69px;
+    height: 69px;
+    border-radius: 100%;
+    background-color: #F1F5FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-item-title {
+    color: #4074F8;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 177.036%;
+    margin-top: clamp(18px, 3vw, 30px);
+}
+
+.about-item-text {
+    color: #ADB3CB;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 177.036%; /* 19.474px */
+    margin-top: clamp(16px, 2.6vw, 25px);
+}
+
+.about-section-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: clamp(30px, 8vw, 141px);
+}
+
+.about-section-btns span {
+    color: #ADB3CB;
+    font-family: 'Open Sans';
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 177.036%;
+    margin: 0 16px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.about-section-btns span::before,
+.about-section-btns span::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #DAE4FE;
+}
+
+.about-section-btns span::before {
+    margin-right: 16px;
+}
+
+.about-section-btns span::after {
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    .about-section {
+        background: none;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        height: unset;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .about-item {
+        max-width: 90%;
+        flex: unset;
+    }   
+}
+
+@media screen and (max-width: 480px) {
+    .about-section-btns {
+        flex-direction: column;
+    }
+    
+    .about-section-btns span {
+        margin: 16px 0;
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .about-section-btns span::after,
+    .about-section-btns span::before {
+        display: none;
+    }
+}
