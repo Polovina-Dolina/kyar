@@ -1,6 +1,7 @@
 .manage-section {
 	background: #F5F8FF;
-	padding: clamp(50px, 19vw, 210px) 0 clamp(50px, 19vw, 216px);
+	/*padding: clamp(50px, 19vw, 210px) 0 clamp(50px, 19vw, 216px);*/
+	padding: clamp(50px, 14.1vw, 210px) 0 clamp(50px, 18vw, 216px);	
 }
 
 .manage-section .container {

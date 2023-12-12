@@ -6,6 +6,8 @@
 	font-size: 13px;
 	padding: 13px 20px;
 	border: 1px solid red;
+
+	transition: all 300ms;
 }
 
 .double-btn-item > svg {
@@ -19,6 +21,13 @@
 	font-weight: 700;
 	border-radius: 2px 0 0 2px;
 }
+.double-btn-background:hover {
+	color: var(--back);
+	background: var(--color);
+}
+.double-btn-background:hover svg path {
+	fill: var(--back);
+}
 
 .double-btn-outline {
 	color: var(--color);
@@ -26,4 +35,8 @@
 	border-color: var(--border);
 	font-weight: 500;
 	border-radius: 0 2px 2px 0;
+}
+.double-btn-outline:hover {
+	background: #FFF;
+	color: #000;
 }

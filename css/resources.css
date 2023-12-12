@@ -1,11 +1,11 @@
 .resources-section {
-    padding: clamp(50px, 9vw, 104px) clamp(0px, 9vw, 141px);
+    padding: clamp(50px, 6.9vw, 104px) clamp(0px, 9vw, 141px);
     background-color: #F5F8FF;
 }
 
 .resources-slider-container {
     position: relative;
-    margin-top: clamp(32px, 8vw, 92px);
+    margin-top: clamp(32px, 4.5vw, 92px);
 }
 
 .resources-slider {
@@ -87,7 +87,7 @@
 
 .resources-swiper-pagination {
     position: static !important;
-    margin-top: clamp(32px, 8vw, 101px);
+    margin-top: clamp(32px, 4.25vw, 101px);
 }
 
 .resources-btn-prev {

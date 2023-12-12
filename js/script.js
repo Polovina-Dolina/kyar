@@ -7,9 +7,11 @@ $(document).ready(function() {
     })
 
     $(".header-nav .nav-link").click(function() {
-        $(".burger").toggleClass("burger-cross")
-        $("#header-nav").toggleClass("header-nav-open")
-        $("body").toggleClass("lock")
+        if ($(this).parent().parent().parent().hasClass("header-nav-open")) {
+            $(".burger").toggleClass("burger-cross")
+            $("#header-nav").toggleClass("header-nav-open")
+            $("body").toggleClass("lock")
+        }
     })
 
     $(".accordion-item").click(function() {

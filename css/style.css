@@ -6,6 +6,7 @@
 
 html {
 	font-family: 'Quicksand', sans-serif;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -52,6 +53,14 @@ ul {
 	font-weight: 400;
 }
 
+.h3 {
+	color: #3D4F9F;
+	text-align: center;
+	font-size: clamp(20px, 1.6vw, 24px);
+	font-weight: 500;
+	margin-top: .83em;
+}
+
 .container {
 	max-width: 1240px;
 	padding: 0 20px;
@@ -70,23 +79,42 @@ ul {
 	color: #3A79FF;
 	font-size: 13px;
 	font-weight: 700;
-	padding: 13px 15px;
+	padding: 13px 21px;
 	background: #D2E1FF;
 	border-radius: 2px;
+	transition: all 300ms;
+}
+.btn:hover {
+	background: transparent;
+	outline: 2px solid #D2E1FF;
 }
 
 .btn.btn-red {
 	color: #D43F3F;
 	background-color: #FFD7D7;
 }
+.btn.btn-red:hover {
+	background: transparent;
+	outline: 2px solid #FFD7D7;
+}
 
 .btn.btn-transparent {
 	background: none;
 	color: #A6B6DA;
 }
+.btn.btn-transparent:hover {
+	background: #A6B6DA;
+	outline: none;
+	color: #FFF;
+}
+
 .btn.btn-gray {
 	background: #E8ECF4;
 	color: #7382A3;
+}
+.btn.btn-gray:hover {
+	background: transparent;
+	outline: 2px solid #E8ECF4;
 }
 
 .swiper-pagination-bullet {
